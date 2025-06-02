@@ -1,32 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { userData } from './userData';
 
-const projects = [
-  {
-    title: 'E-commerce Website',
-    description: 'A fully responsive e-commerce platform built with React and Node.js.',
-    tech: ['React', 'Node.js', 'MongoDB'],
-    image: 'https://picsum.photos/id/237/200/300'
-  },
-  {
-    title: 'Task Management App',
-    description: 'Productivity app with drag-and-drop functionality.',
-    tech: ['JavaScript', 'Firebase', 'CSS3'],
-    image: 'https://picsum.photos/id/237/200/300'
-  },
-  {
-    title: 'Task Management App',
-    description: 'Productivity app with drag-and-drop functionality.',
-    tech: ['JavaScript', 'Firebase', 'CSS3'],
-    image: 'https://picsum.photos/id/237/200/300'
-  },
-  {
-    title: 'Task Management App',
-    description: 'Productivity app with drag-and-drop functionality.',
-    tech: ['JavaScript', 'Firebase', 'CSS3'],
-    image: 'https://picsum.photos/id/237/200/300'
-  }
-];
 
 const Projects = () => {
   const projectRefs = useRef([]);
@@ -58,7 +33,7 @@ const Projects = () => {
       <div className="container">
         <h2 className="section-title">My <span className="highlight">Projects</span></h2>
         <div className="projects-grid">
-          {projects.map((project, index) => (
+          {userData.Project.map((project, index) => (
             <div 
               key={index}
               className="project-card"
@@ -67,7 +42,7 @@ const Projects = () => {
               <div className="project-image">
                 <img src={project.image} alt={project.title} />
                 <div className="project-overlay">
-                  <a href="#" className="project-link"><FaExternalLinkAlt /></a>
+                  <a href={project.live} className="project-link"><FaExternalLinkAlt /></a>
                   <a href="#" className="project-link"><FaGithub /></a>
                 </div>
               </div>

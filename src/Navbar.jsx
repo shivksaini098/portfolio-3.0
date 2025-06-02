@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaMoon, FaSun } from 'react-icons/fa';
+import { userData } from './userData';
 
 const Navbar = ({ theme, toggleTheme }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,6 +16,10 @@ const Navbar = ({ theme, toggleTheme }) => {
   }, []);
 
   const handleLinkClick = (sectionId) => {
+    if(sectionId === 'resume'){
+      window.location.href = userData.resumeLink;
+      return;
+    }
     const section = document.getElementById(sectionId);
     if (section) {
       const yOffset = -80; // adjust based on navbar height
@@ -31,16 +36,16 @@ const Navbar = ({ theme, toggleTheme }) => {
       <div className="container">
         <a href="#home" className="logo" onClick={(e) => { e.preventDefault(); handleLinkClick('home'); }}>
           <div className="logo">
-            <div className="symbol">&lt;</div>
-            <div className="initials">PG</div>
+            {/* <div className="symbol">&lt;</div> */}
+            <div className="initials">SK</div>
             <div className="name">
-              <div>PIYUSH</div>
-              <div>GARG</div>
+              <div>Shiv Kumar</div>
+              <div>Saini</div>
             </div>
           </div>
         </a>
         <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-          <li><a href="#home" onClick={(e) => { e.preventDefault(); handleLinkClick('home'); }}>Home</a></li>
+          <li><a href="#home" onClick={(e) => { e.preventDefault(); handleLinkClick('resume'); }}>Resume</a></li>
           <li><a href="#about" onClick={(e) => { e.preventDefault(); handleLinkClick('about'); }}>About</a></li>
           <li><a href="#education" onClick={(e) => { e.preventDefault(); handleLinkClick('education'); }}>Education</a></li>
           <li><a href="#projects" onClick={(e) => { e.preventDefault(); handleLinkClick('projects'); }}>Projects</a></li>
