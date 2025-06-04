@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import { userData } from './userData';
 
 const Contact = () => {
   const handleSubmit = (e) => {
@@ -20,45 +21,23 @@ const Contact = () => {
             <div className="contact-details">
               <div className="contact-item">
                 <FaEnvelope className="icon" />
-                <span>hello@example.com</span>
+                <span>{userData.contactUs.gmail}</span>
               </div>
               <div className="contact-item">
                 <FaPhone className="icon" />
-                <span>+1 (123) 456-7890</span>
+                <span>{userData.contactUs.phone}</span>
               </div>
               <div className="contact-item">
                 <FaMapMarkerAlt className="icon" />
-                <span>San Francisco, CA</span>
+                <span>{userData.contactUs.location}</span>
               </div>
             </div>
             <div className="social-links">
-              <a href="#"><FaGithub /></a>
-              <a href="#"><FaLinkedin /></a>
-              <a href="#"><FaTwitter /></a>
-              <a href="#"><FaInstagram /></a>
+              <a href={userData.contactUs.github}><FaGithub /></a>
+              <a href={userData.contactUs.linkedIn}><FaLinkedin /></a>
+              <a href={userData.contactUs.twiter}><FaTwitter /></a>
+              <a href={userData.contactUs.instragram}><FaInstagram /></a>
             </div>
-          </div>
-          
-          <div className="contact-form">
-            <form onSubmit={handleSubmit}>
-              <div className="form-group">
-                <input type="text" id="name" required />
-                <label htmlFor="name">Your Name</label>
-              </div>
-              <div className="form-group">
-                <input type="email" id="email" required />
-                <label htmlFor="email">Your Email</label>
-              </div>
-              <div className="form-group">
-                <input type="text" id="subject" required />
-                <label htmlFor="subject">Subject</label>
-              </div>
-              <div className="form-group">
-                <textarea id="message" required></textarea>
-                <label htmlFor="message">Your Message</label>
-              </div>
-              <button type="submit" className="btn btn-primary">Send Message</button>
-            </form>
           </div>
         </div>
       </div>
