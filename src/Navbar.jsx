@@ -36,10 +36,10 @@ const Navbar = ({ theme, toggleTheme }) => {
       <div className="container">
         <a href="#home" className="logo" onClick={(e) => { e.preventDefault(); handleLinkClick('home'); }}>
           <div className="logo">
-            {/* <div className="symbol">&lt;</div> */}
-            <div className="initials">SK</div>
+           <div className="symbol">&lt;</div>
+            <div className="initials">SK </div>
             <div className="name">
-              <div>Shiv Kumar</div>
+              <div> Shiv Kumar</div>
               <div>Saini</div>
             </div>
           </div>

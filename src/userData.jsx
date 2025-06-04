@@ -1,4 +1,5 @@
 import { FaGraduationCap, FaSchool, FaCode, FaChartLine, FaUsers, FaLaptop, FaPercent, FaTrophy } from 'react-icons/fa';
+import Experience from './Experience';
 
 export const userData = {
     Home: {
@@ -13,7 +14,7 @@ export const userData = {
         mySkill: "My Skills",
         skills: ["C++", "SmartFox", "TypeScript", "JavaScript", "Java", "SQL", "Node.Js", "Unity", "Cocos Creator", "Android Studio", "Rect.Js", "Express.Js", "GitHub", "Cocos2dx", "IOS"],
     },
-    
+
     Education: [
         {
             icon: <FaGraduationCap />,
@@ -40,10 +41,10 @@ export const userData = {
     ],
 
     Project: [
-         {
+        {
             title: "Ludotalks",
             description: "online ludo playing application have feture like multiplayer ludo group chat and circule (group that can play ludo) and add money withdrowal and kyc etc",
-            tech: ["JavaScript","typescript", "Cocos creator","java","smartfox","Android","Ios"],
+            tech: ["JavaScript", "typescript", "Cocos creator", "java", "smartfox", "Android", "Ios"],
             live: "https://ludotalks.in/",
             image: 'ludo 24 (1)EEEE 1.png',
             github: ""
@@ -51,14 +52,14 @@ export const userData = {
         {
             title: "Poker Date (Game + Dating Application)",
             description: "Enhanced app performance and optimized the user experience through UI/UX revamp.",
-            tech: ["Cocos2dx", "C++", "Firebase","java","Android","Ios"],
+            tech: ["Cocos2dx", "C++", "Firebase", "java", "Android", "Ios"],
             live: "https://www.pokerdate.net/",
             image: 'pokerImage.webp',
             github: ""
         }, {
             title: "AGEC High School (Simulation Game)",
             description: "Implemented gameplay systems and interactive mini-games to increase engagement.",
-            tech: ["JS", "Cocos2dx","java","Android","Ios"],
+            tech: ["JS", "Cocos2dx", "java", "Android", "Ios"],
             live: "https://theentrepreneurshipchallenge.com/",
             image: 'logo3.svg',
             github: ""
@@ -74,6 +75,14 @@ export const userData = {
         instragram: "https://www.instagram.com/i_am_shiv099/",
         twiter: "https://x.com/ShivKum09924768"
     },
+
+    Experience: [
+        {
+            title: "Assert Infotech (12/21 - PRESENT)",
+            description: "Assert Infotech breathes life into captivating games for PC, consoles, and mobile. Their expert team blends technical magic (JS, TS, C++, etc.) with creative fire to transform your vision into unforgettable gaming experiences. From thrilling adventures to casual delights, they craft diverse worlds tailored to every preference. Dive into a partnership built on transparency, trust, and shared success. Let Assert Infotech guide your game from concept to captivating reality.",
+            skills: ["C++", "SmartFox", "TypeScript", "JavaScript", "Cocos Creator", "Android Studio", "Cocos2dx", "IOS"],
+        }
+    ],
     footerMessage: "",
-    resumeLink:"https://drive.google.com/file/d/1yADRFqPnDhBTaszUNKQ73WqKestmeaVv/view"
+    resumeLink: "https://drive.google.com/file/d/1yADRFqPnDhBTaszUNKQ73WqKestmeaVv/view"
 }
