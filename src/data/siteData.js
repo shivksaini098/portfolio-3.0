@@ -26,11 +26,15 @@ export const siteData = {
       'I build multiplayer & mobile games that keep players engaged and generate revenue.',
     description:
       'I help studios, founders, and agencies ship polished game experiences across Android, iOS, and web with reliable remote communication, clean implementation, and gameplay systems built for retention.',
-    primaryCta: { label: 'Hire Me', href: '#contact' },
+    primaryCta: {
+      label: 'Hire Me',
+      href: 'https://www.upwork.com/freelancers/~0119ddef8afb7d63b1?mp_source=share',
+      external: true,
+    },
     secondaryCta: { label: 'View Projects', href: '#projects' },
     tertiaryCta: {
       label: 'Download Resume',
-      href: 'https://drive.google.com/file/d/1yADRFqPnDhBTaszUNKQ73WqKestmeaVv/view',
+      href: 'https://drive.google.com/file/d/1RE2vJ57y91H3K6988X_uHchqMEYmUcCU/view?usp=sharing',
     },
     image: '/p2.jpeg',
     availability: 'Available for select freelance projects',
@@ -145,11 +149,12 @@ export const siteData = {
     email: 'shivksaini0120@gmail.com',
     phone: '+91 9461216635',
     location: 'Jaipur, Rajasthan, India',
+    upwork: 'https://www.upwork.com/freelancers/~0119ddef8afb7d63b1?mp_source=share',
     linkedin: 'https://www.linkedin.com/in/shiv-k-saini',
     github: 'https://github.com/shivksaini',
     twitter: 'https://x.com/ShivKum09924768',
     instagram: 'https://www.instagram.com/i_am_shiv099/',
-    resumeUrl: 'https://drive.google.com/file/d/1yADRFqPnDhBTaszUNKQ73WqKestmeaVv/view',
+    resumeUrl: 'https://drive.google.com/file/d/1RE2vJ57y91H3K6988X_uHchqMEYmUcCU/view?usp=sharing',
   },
   footerMessage:
     'Freelance game development for Upwork clients, founders, agencies, and studios that need a dependable technical partner.',

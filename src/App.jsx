@@ -10,7 +10,12 @@ import { navigation, siteData } from './data/siteData'
 function App() {
   return (
     <div className="min-h-screen bg-transparent text-slate-100">
-      <Navbar brand={siteData.brand} links={navigation} resumeUrl={siteData.contact.resumeUrl} />
+      <Navbar
+        brand={siteData.brand}
+        links={navigation}
+        resumeUrl={siteData.contact.resumeUrl}
+        hireUrl={siteData.contact.upwork}
+      />
 
       <main>
         <Hero hero={siteData.hero} />

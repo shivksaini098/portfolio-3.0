@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 
-function Navbar({ brand, links, resumeUrl }) {
+function Navbar({ brand, links, resumeUrl, hireUrl }) {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
 
@@ -57,7 +57,9 @@ function Navbar({ brand, links, resumeUrl }) {
             Resume
           </a>
           <a
-            href="#contact"
+            href={hireUrl}
+            target="_blank"
+            rel="noreferrer"
             className="cta-primary px-5 py-2"
           >
             Hire Me
@@ -97,7 +99,9 @@ function Navbar({ brand, links, resumeUrl }) {
               Resume
             </a>
             <a
-              href="#contact"
+              href={hireUrl}
+              target="_blank"
+              rel="noreferrer"
               onClick={closeMenu}
               className="cta-primary rounded-2xl px-4 py-3"
             >

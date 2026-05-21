@@ -20,6 +20,9 @@ function Footer({ brand, links, footerMessage, socialLinks }) {
             <a href={`mailto:${socialLinks.email}`} className="transition hover:text-white">
               {socialLinks.email}
             </a>
+            <a href={socialLinks.upwork} target="_blank" rel="noreferrer" className="transition hover:text-white">
+              Upwork
+            </a>
             <a href={socialLinks.linkedin} target="_blank" rel="noreferrer" className="transition hover:text-white">
               LinkedIn
             </a>

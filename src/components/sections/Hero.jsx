@@ -1,6 +1,10 @@
 import { FaArrowRight } from 'react-icons/fa'
 
 function Hero({ hero }) {
+  const primaryLinkProps = hero.primaryCta.external
+    ? { target: '_blank', rel: 'noreferrer' }
+    : {}
+
   return (
     <section id="home" className="section-anchor relative overflow-hidden pt-32 pb-16 sm:pb-20 lg:pt-36">
       <div className="absolute inset-0 -z-10">
@@ -25,6 +29,7 @@ function Hero({ hero }) {
           <div className="flex flex-col gap-3 sm:flex-row">
             <a
               href={hero.primaryCta.href}
+              {...primaryLinkProps}
               className="cta-primary gap-2 px-6 py-3.5"
             >
               {hero.primaryCta.label}

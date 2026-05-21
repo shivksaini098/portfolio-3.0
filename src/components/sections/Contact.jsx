@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa'
+import { FaBriefcase, FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa'
 import SectionHeading from '../ui/SectionHeading'
 
 const initialForm = {
@@ -58,6 +58,23 @@ function Contact({ contact }) {
             </div>
 
             <div className="grid gap-4">
+              <a
+                href={contact.upwork}
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-[24px] border border-white/10 bg-black/20 p-5 transition hover:border-white/20"
+              >
+                <div className="flex items-start gap-4">
+                  <span className="mt-1 text-white">
+                    <FaBriefcase />
+                  </span>
+                  <div>
+                    <p className="text-sm font-semibold uppercase tracking-[0.22em] text-slate-500">Upwork</p>
+                    <p className="mt-2 text-base text-white">View profile and invite me to your project</p>
+                  </div>
+                </div>
+              </a>
+
               <a
                 href={`mailto:${contact.email}`}
                 className="rounded-[24px] border border-white/10 bg-black/20 p-5 transition hover:border-white/20"
